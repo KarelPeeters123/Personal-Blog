@@ -48,6 +48,16 @@
             box-shadow: 0 6px 24px rgba(2, 6, 23, 0.6)
         }
 
+        /* Thumbnail image that floats to the top-right and wraps text */
+        .thumb {
+            float: right;
+            width: 220px;
+            margin: 0 0 12px 18px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 6px 18px rgba(2,6,23,0.5);
+        }
+
         h1 {
             margin: 0 0 8px 0;
             font-size: 28px
@@ -97,6 +107,13 @@
             h1 {
                 font-size: 22px
             }
+            .thumb {
+                float: none;
+                display: block;
+                margin: 0 0 14px 0;
+                width: 100%;
+                max-width: 360px;
+            }
         }
     </style>
 </head>
@@ -105,6 +122,7 @@
     <div class="wrap">
         <article class="article-card">
             <header>
+                <img class="thumb" src="thumbnail.jpeg" alt="Party thumbnail" />
                 <h1>Every Good D&D Campaign starts... at a party?</h1>
                 <div class="meta">By Karel Peeters • October 8, 2025 • Category: D&D</div>
                 <p class="lead">Good D&D campaigns should start at a party, here's why.

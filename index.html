@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Articles — Personal Blog</title>
+    <meta name="description" content="A glossary of articles." />
+    <style>
+      :root{--bg:#0f1724;--card:#0b1220;--accent:#60a5fa;--muted:#9aa4b2}
+      html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:#e6eef8}
+      .wrap{max-width:980px;margin:40px auto;padding:20px}
+      header{margin-bottom:22px}
+      h1{margin:0 0 6px 0;font-size:28px}
+      .lead{color:var(--muted);margin:0 0 18px}
+      .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+      .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:18px;text-decoration:none;color:inherit;display:block;box-shadow:0 6px 18px rgba(2,6,23,0.5)}
+      .title{font-size:18px;margin:0 0 6px}
+      .desc{color:var(--muted);font-size:14px;margin:0}
+      .meta{color:var(--muted);font-size:13px;margin-top:10px}
+      .empty{color:var(--muted);padding:28px;background:var(--card);border-radius:10px;text-align:center}
+      @media (max-width:600px){.wrap{padding:12px}h1{font-size:22px}}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Articles</h1>
+        <p class="lead">A curated glossary of articles. Click a card to read the full post.</p>
+      </header>
+
+      <main>
+        <section class="grid" aria-live="polite">
+          <!-- Article entries -->
+          <a class="card" href="articles/a_party.html">
+            <div class="title">Every Good D&D Campaign starts... at a party?</div>
+            <div class="desc">Good D&D campaigns should start at a party, here's why.</div>
+            <div class="meta">By Karel Peeters • October 8, 2025</div>
+          </a>
+
+          <!-- add more article cards here -->
+
+        </section>
+
+        <section style="margin-top:18px">
+          <div class="empty">To add a new article: create a file in <code>Personal-Blog/articles/</code> and add a card here.</div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
